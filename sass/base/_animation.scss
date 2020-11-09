@@ -1,0 +1,44 @@
+
+@keyframes moveInLeft {
+    0% {   /* when animation start */
+        opacity: 0;
+        transform: translateX(-10rem);  /* start from -100px on x axies */
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {   /* when animation finished */
+        opacity: 1;
+        transform: translate(0); /* end at 0px means stop on its actual position*/
+    }
+}
+
+@keyframes moveInRight {
+    0% {   /* when animation start */
+        opacity: 0;
+        transform: translateX(10rem);  /* start from -100px on x axies */
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {   /* when animation finished */
+        opacity: 1;
+        transform: translate(0); /* end at 0px means stop on its actual position*/
+    }
+}
+
+@keyframes moveInBottom {
+    0% {   /* when animation start */
+        opacity: 0;
+        transform: translateY(3rem);  /* start from -100px on x axies */
+    }
+
+    100% {   /* when animation finished */
+        opacity: 1;
+        transform: translate(0); /* end at 0px means stop on its actual position*/
+    }
+}

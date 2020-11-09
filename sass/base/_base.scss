@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  /* == 10px (brouser default font-size is 16px......so 10px = 16px * 62.5%........if some person is ussually want big font and he set his brouser default font size 20px.....so our default size is change accordingly.....and he can see our site in zoom mode)
+                        (rem = x * 10px......so define default size here now we will use size in rem unit which relative to 10px........
+                        if we want to change site's measurement we need to change only our default value.....
+                        which is realy good practice for media/mobile devices.) */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 1.6rem;*/
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+
+    box-sizing: border-box;
+}
