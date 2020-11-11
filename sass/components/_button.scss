@@ -1,5 +1,6 @@
 
 .btn {
+    &,  //for <button> element 
     &:link,    /* link, visited, hover, active are button's suedo class/properties*/
     &:visited {
         text-transform: uppercase;
@@ -10,6 +11,10 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //changes for the <button> element
+        border: none;
+        cursor: pointer;
     }
     
     &:hover {
@@ -22,7 +27,9 @@
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        display: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
